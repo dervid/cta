@@ -1,0 +1,23 @@
+preliminary notes
+
+so these are the steps as I imagine them now:
+
+	1. design preliminary flowchart or diagram showing how software will work; build out as much as possible but consider this a draft
+
+	2. set up git repository
+
+	3. set up virtualenv with requirements.txt file and set up project locally
+
+	4. design data tables with column names, types and sizes - create with notes, not SQL - this is presumably handled by SQLAlchemy
+
+	5. design data objects and OOP inheritance design; consider how the objects will map to tables
+
+	6. ask AI to generate sqlalchemy to map data objects to tables (object-relational mapping)
+
+	7. add setter, getter and other methods to each object to support intended functionality
+
+	8. ask AI to write test scripts that thoroughly test objects against SQL tables
+
+	9. add docstrings to all objects and methods, set up Sphynx documentation
+
+	10. begin to write procedural scripts to fulfill flowchart plan

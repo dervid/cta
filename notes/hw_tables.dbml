@@ -1,0 +1,52 @@
+Table user {
+  id integer [primary key]
+  fname varchar
+  lname varchar
+  nickname varchar
+  name_is_reverse boolean
+  email varchar
+  goals varchar
+  experience varchar
+  bio text
+  linkedin_link varchar
+  how_heard varchar
+  created_at timestamp
+}
+
+Table class {
+  id integer [primary key]
+  name varchar
+}
+
+Table section {
+  id integer [primary key]
+  class_id integer
+  year integer
+  semester varchar
+  other_id varchar [note: 'supplementary id value if needed']
+  start_date datetime
+  end_date datetime
+}
+
+Table user_section {
+    id integer [primary key]
+    user_id integer
+    section_id integer
+    notes text
+}
+
+Table session {
+  id integer [primary key]
+  section_id integer
+  name varchar
+  num_in_seq integer
+}
+
+Table assignment {
+  id integer [primary key]
+  section_id integer
+  session_ud
+  title varchar
+  text text
+  solution text
+}
