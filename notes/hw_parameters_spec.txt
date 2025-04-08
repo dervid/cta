@@ -1,0 +1,23 @@
+homework object creation
+
+the request comes in with specific info
+
+cookie: user id
+
+parameters:
+  - user_id?  would it ever come from parameters?
+  - action
+      display_add_update_section
+      add_update_section
+      display_no_user
+      display_profile
+      update_profile
+      request_login_link
+      display_assignment_links
+      display_assignment
+      submit_solution
+      submit review
+  - section_id
+  - version_id (or use latest)
+
+  (of course page-specific parameters as well)
